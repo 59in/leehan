@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>안녕하세요. 지나가던 서울역 노숙자 이한입니다.</h1>
+  <h2>디스코드 닉네임은 "lee_han59" 입니다.</h2>
+<h2>제가 운영하는 서버입니다.</h2>
+<h2><a href="https://www.discord.gg/nUnhgW68EZ">ALMC</a></h2>
+<script>
+    (function() {
+   var w = window;
+   if (w.ChannelIO) {
+     return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+   }
+   var d = window.document;
+   var ch = function() {
+     ch.c(arguments);
+   };
+   ch.q = [];
+   ch.c = function(args) {
+     ch.q.push(args);
+   };
+   w.ChannelIO = ch;
+   function l() {
+     if (w.ChannelIOInitialized) {
+       return;
+     }
+     w.ChannelIOInitialized = true;
+     var s = document.createElement('script');
+     s.type = 'text/javascript';
+     s.async = true;
+     s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+     s.charset = 'UTF-8';
+     var x = document.getElementsByTagName('script')[0];
+     x.parentNode.insertBefore(s, x);
+   }
+   if (document.readyState === 'complete') {
+     l();
+   } else if (window.attachEvent) {
+     window.attachEvent('onload', l);
+   } else {
+     window.addEventListener('DOMContentLoaded', l, false);
+     window.addEventListener('load', l, false);
+   }
+    })();
+    ChannelIO('boot', {
+   "pluginKey": "85b7fcb8-9f3a-4d47-a96a-1217f5c6ce82"
+    });
+  </script>
+</body>
+</html>
